@@ -1,0 +1,6 @@
+fairseq==0.12.2
+g2p_en
+scipy
+nltk
+scipy
+#nvgpu
