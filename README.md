@@ -1,10 +1,21 @@
 # TTS FastSpeech2
 
+[FastSpeech2](https://arxiv.org/pdf/2006.04558.pdf) is a deep learning model based on the Transformer structure, which
+can directly generate speech from English text in speech synthesis. FastSpeech2 was proposed by Microsoft Asia Research
+Institute and Microsoft Azure Speech Team jointly with Zhejiang University.
+
+FastSpeech2 is a text-to-speech synthesis model, an improved version
+Quick voice. FastSpeech2 improves the training method of FastSpeech and improves the training speed and accuracy.
+Compared with FastSpeech, FastSpeech2's speech synthesis is faster and can generate higher quality speech.
+
 ## 1. Download model
 
-Download the model from https://huggingface.co/facebook/fastspeech2-en-ljspeech and put all model files
-in `./fastspeech2-en-ljspeech` directory which under the current directory. The directory structure is as follows
+- (Option1) Download the model from https://huggingface.co/facebook/fastspeech2-en-ljspeech/tree/main and put all model files
+in `./fastspeech2-en-ljspeech` directory which under the current directory.
 
+- (Option2) Alternatively, you can download the model with the script `Download_model.py`, an example is in `prepare.sh`. NOTE this script also does the work in Part2.2. If you excuted `bash prepare.sh`, you can skip the Part2.2 because Part2.2 is also finished by this script.
+
+Finally, The directory structure is as follows
 
 ```text
 ./fastspeech2-en-ljspeech
@@ -30,9 +41,15 @@ pip install -r ./requirements.txt
 
 ### 2.2 NLTK files
 
-The model prediction requires nltk's `cmudict.zip` and `averaged_perceptron_tagger.zip`. Due to the unstable network, manually download these compressed packages by yourself.
-Download archives from https://github.com/nltk/nltk_data/tree/gh-pages/packages and put them in `3rdparty/nltk` under the current directory, the directory is as follows:
+- (Option1) The model prediction requires nltk's `cmudict.zip` and `averaged_perceptron_tagger.zip`. Due to the unstable network, manually download these compressed packages by yourself.
+Download archives from https://github.com/nltk/nltk_data/tree/gh-pages/packages and put them in `3rdparty/nltk` under the current directory.
 
+- (Option2) Alternatively, you can also do this part with the script `prepare.sh`, just with below command.
+```shell
+bash prepare.sh
+```
+
+In short, you get the following directories and files finally.
 ```text
 3rdparty
 └── nltk

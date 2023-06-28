@@ -4,3 +4,5 @@ scipy
 nltk
 scipy
 #nvgpu
+torchserve
+huggingface-hub

@@ -6,13 +6,10 @@ import logging
 import os
 import time
 from pathlib import Path
-from typing import List
 
-import numpy as np
 import torch
 from fairseq.checkpoint_utils import load_model_ensemble_and_task
 from fairseq.models.text_to_speech import TTSHubInterface
-from scipy.io import wavfile
 from ts.torch_handler.base_handler import BaseHandler
 
 logger = logging.getLogger(__name__)
