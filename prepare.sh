@@ -10,7 +10,7 @@ function download_model() {
     --local_dir ./${download_model_dir}
 }
 
-function download_ntlk_data() {
+function download_nltk_data() {
   rm -rf ./3rdparty
   mkdir -p ./3rdparty/nltk/corpora
   mkdir -p ./3rdparty/nltk/taggers
@@ -31,4 +31,4 @@ function download_ntlk_data() {
 download_model
 
 # step2. download nltk data
-download_ntlk_data
+download_nltk_data
