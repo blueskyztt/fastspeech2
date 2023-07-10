@@ -17,7 +17,6 @@ function download_nltk_data() {
 
   cd ./3rdparty/nltk/corpora
   wget -c https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/cmudict.zip
-  ls
   unzip ./cmudict.zip
   cd -
 
