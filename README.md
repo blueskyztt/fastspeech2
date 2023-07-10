@@ -36,7 +36,7 @@ Open a Terminal window. Pull the code of this project by running
   in `prepare.sh`. Note this script also does the work in Part4.2. If you excuted `bash prepare.sh`, you can skip the
   Part2.2 because Part2.2 is also finished by this script.
 
-Finally, The directory structure is as follows
+Finally, The directory structure is as follows:
 
 ```text
 ./fastspeech2-en-ljspeech
