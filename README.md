@@ -33,7 +33,7 @@ Open a Terminal window. Pull the code of this project by running
   in `./fastspeech2-en-ljspeech` directory which under the current directory.
 
 - (Option2) Alternatively, you can download the model with the script `Download_model.py`, an example is
-  in `prepare.sh`. Note this script also does the work in Part2.2. If you excuted `bash prepare.sh`, you can skip the
+  in `prepare.sh`. Note this script also does the work in Part4.2. If you excuted `bash prepare.sh`, you can skip the
   Part2.2 because Part2.2 is also finished by this script.
 
 Finally, The directory structure is as follows
