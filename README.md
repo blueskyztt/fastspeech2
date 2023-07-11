@@ -34,7 +34,7 @@ Open a Terminal window. Pull the code of this project by running
 
 - (Option2) Alternatively, you can download the model with the script `Download_model.py`, an example is
   in `prepare.sh`. Note this script also does the work in Part4.2. If you excuted `bash prepare.sh`, you can skip the
-  Part2.2 because Part2.2 is also finished by this script.
+  Part4.2 because Part4.2 is also finished by this script.
 
 Finally, The directory structure is as follows:
 
@@ -92,6 +92,8 @@ In short, you get the following directories and files finally.
 Now, current directory should contain these files and directories:
 
 ```text
+├── Download_model.py
+├── prepare.sh
 ├── 3rdparty
 ├── README.md
 ├── client.py
@@ -115,7 +117,7 @@ After waiting for a while, we got the mar file needed for the service. Then we c
 Now you can start service with below command.
 
 ```shell
-bash start_ts.sh
+bash ./start_ts.sh
 ```
 
 ## 7. Test Service
@@ -123,7 +125,7 @@ bash start_ts.sh
 Request the service in the terminal, execute
 
 ```shell
-python client.py
+python ./lr_client.py
 ```
 
 When you see 'Successfully generated output_client.wav', indicating that the requested service is successful. In the
